@@ -193,4 +193,3 @@ sed -i "s/^.*DB_PASSWORD.*$/define('DB_PASSWORD', '$password');/" /var/www/html/
 The WordPress folder was then moved to the folder ``/var/www/html`` were the Apache VirtualHost is pointing.
 
 The Apache instance uses the security group for HTTP (port 80).
-# sysadmin-final-exam
