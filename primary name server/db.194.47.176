@@ -1,0 +1,19 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL    180
+@       IN      SOA     ns1.ld222me-1dv031.devopslab.xyz. admin.ld222me-1dv031.devopslab.xyz. (
+                              7         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         180 )          ; Negative Cache TTL
+;
+; Name servers
+    IN      NS      ns1.ld222me-1dv031.devopslab.xyz.
+    IN      NS      ns2.ld222me-1dv031.devopslab.xyz.
+; PTR records
+102       IN      PTR      ns1.ld222me-1dv031.devopslab.xyz.
+130       IN      PTR      ns2.ld222me-1dv031.devopslab.xyz.
+153       IN      PTR      acmea.ld222me-1dv031.devopslab.xyz.
+124       IN      PTR      acmeb.ld222me-1dv031.devopslab.xyz.

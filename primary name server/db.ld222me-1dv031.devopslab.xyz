@@ -1,0 +1,21 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL    180
+@       IN      SOA     ns1.ld222me-1dv031.devopslab.xyz. admin.ld222me-1dv031.devopslab.xyz. (
+                              5         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         180 )          ; Negative Cache TTL
+;
+ld222me-1dv031.devopslab.xyz.   IN      NS      ns1.ld222me-1dv031.devopslab.xyz.
+ld222me-1dv031.devopslab.xyz.   IN      NS      ns2.ld222me-1dv031.devopslab.xyz.
+
+ns1     IN      A       194.47.176.102
+ns2     IN      A       194.47.176.130
+
+; Other A records
+@       IN      A       194.47.176.110
+acmea   IN      A       194.47.176.153
+acmeb   IN      A       194.47.176.124
